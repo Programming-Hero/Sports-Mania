@@ -1,0 +1,40 @@
+.back-img {
+  max-height: 50vh;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* App Name which is in Top side */
+.app-name {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
+/* Conditionally rendered images width */
+.league-image {
+  width: 28%;
+}
+@media only screen and (max-width: 700px) {
+  .app-name {
+    font-size: 7vw;
+    top: 25%;
+  }
+  .league-image {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .app-name {
+    font-size: 7vw;
+    top: 15%;
+  }
+  .league-image {
+    width: 48%;
+  }
+}
